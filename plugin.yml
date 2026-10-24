@@ -1,0 +1,21 @@
+name: RadioBlock
+version: 1.0.0
+main: dev.radioblock.RadioPlugin
+api-version: '1.21'
+depend: [voicechat]
+authors: [Claude]
+description: Блок рации из меди с громоотводом-антенной, голос через Simple Voice Chat
+commands:
+  radio:
+    description: Управление плагином RadioBlock
+    usage: /radio <give|reload> [игрок] [количество]
+permissions:
+  radio.use:
+    description: Пользоваться рацией
+    default: true
+  radio.craft:
+    description: Крафтить рацию
+    default: true
+  radio.admin:
+    description: Команды /radio give и /radio reload
+    default: op
